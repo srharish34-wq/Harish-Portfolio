@@ -1,0 +1,257 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Harish SR | Full Stack Developer & AI Engineer</title>
+  <link rel="stylesheet" href="style/style.css" />
+  <link href="https://fonts.googleapis.com/css2?family=Syne:wght@400;600;700;800&family=DM+Sans:ital,wght@0,300;0,400;0,500;1,400&display=swap" rel="stylesheet"/>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/lucide/0.263.1/lucide.min.css"/>
+</head>
+<body class="dark-theme">
+
+ <nav class="navbar" id="navbar">
+  <div class="nav-container">
+    <a href="index.html" class="nav-logo">HARISH SR</a>
+
+    <!-- Desktop links -->
+    <div class="nav-links">
+      <a href="index.html" class="nav-link">Home</a>
+      <a href="about.html" class="nav-link active">About</a>
+      <a href="Services.html" class="nav-link">Services</a>
+      <a href="projects.html" class="nav-link">Projects</a>
+      <a href="contact.html" class="nav-link">Contact</a>
+      <button class="theme-toggle" id="themeToggle" title="Toggle theme">
+        <span class="theme-icon">☀️</span>
+      </button>
+      <a href="mailto:srharish34@gmail.com" class="btn-primary nav-cta">
+        Let's Talk
+      </a>
+    </div>
+
+    <!-- ✅ THIS IS WHAT YOU'RE MISSING -->
+    <button class="hamburger" id="hamburger" aria-label="Toggle menu" aria-expanded="false">
+      <span></span><span></span><span></span>
+    </button>
+
+  </div>
+</nav>
+  <!-- Mobile Menu Drawer -->
+  <div class="mobile-menu" id="mobileMenu">
+    <div class="mobile-menu-inner">
+      <a href="index.html" class="mobile-nav-link active"> Home</a>
+      <a href="about.html" class="mobile-nav-link"> About</a>
+      <a href="services.html" class="mobile-nav-link">Services</a>
+      <a href="projects.html" class="mobile-nav-link">Projects</a>
+      <a href="contact.html" class="mobile-nav-link">Contact</a>
+      <div class="mobile-menu-divider"></div>
+      <div class="mobile-menu-bottom">
+        <button class="mobile-theme-btn" id="mobileThemeToggle">
+          <span class="theme-icon">☀️</span>
+          <span class="theme-label">Dark Mode</span>
+        </button>
+        <a href="mailto:srharish34@gmail.com" class="mobile-cta">
+          <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect width="20" height="16" x="2" y="4" rx="2"/><path d="m22 7-8.97 5.7a1.94 1.94 0 0 1-2.06 0L2 7"/></svg>
+          Let's Talk
+        </a>
+      </div>
+    </div>
+  </div>
+
+  <!-- ===== PAGE HERO ===== -->
+  <section class="page-hero">
+    <div class="hero-bg-orb orb-1"></div>
+    <div class="hero-bg-orb orb-2"></div>
+    <div class="container">
+      <h1 class="fade-in">About <span class="gradient-text">Me</span></h1>
+      <p class="fade-in delay-1">Passionate developer, lifelong learner, problem solver</p>
+      <div class="divider-bar fade-in delay-2"></div>
+    </div>
+  </section>
+
+  <!-- ===== ABOUT GRID ===== -->
+  <section class="section">
+    <div class="container">
+      <div class="about-grid">
+
+        <!-- LEFT: Info Card -->
+        <div class="fade-in">
+          <div class="info-card">
+            <div class="info-avatar">
+              <img src="images/harish-photo.jpg" alt="Harish SR"
+                onerror="this.src='https://ui-avatars.com/api/?name=Harish+SR&background=7c3aed&color=fff&size=200'"/>
+            </div>
+            <h2>Harish SR</h2>
+            <p class="info-role">Full Stack Developer &amp; AI Engineer</p>
+
+            <div class="info-list">
+              <div class="info-item">
+                <span class="info-icon">✉️</span>
+                <div>
+                  <div class="info-label">Email</div>
+                  <div class="info-value"><a href="mailto:srharish34@gmail.com">srharish34@gmail.com</a></div>
+                </div>
+              </div>
+              <div class="info-item">
+                <span class="info-icon">📞</span>
+                <div>
+                  <div class="info-label">Phone</div>
+                  <div class="info-value"><a href="tel:+916369254389">+91 6369254389</a></div>
+                </div>
+              </div>
+              <div class="info-item">
+                <span class="info-icon">📍</span>
+                <div>
+                  <div class="info-label">Location</div>
+                  <div class="info-value">Chennai, Tamil Nadu</div>
+                </div>
+              </div>
+              <div class="info-item">
+                <span class="info-icon">🎓</span>
+                <div>
+                  <div class="info-label">CGPA</div>
+                  <div class="info-value">8.00 / 10</div>
+                </div>
+              </div>
+            </div>
+
+            <div class="info-btns">
+              <a href="mailto:srharish34@gmail.com" class="btn-primary">Hire Me</a>
+              <button class="btn-secondary" onclick="downloadCV()">
+                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"/><polyline points="7 10 12 15 17 10"/><line x1="12" x2="12" y1="15" y2="3"/></svg>
+                Download CV
+              </button>
+            </div>
+          </div>
+        </div>
+
+        <!-- RIGHT: About Text -->
+        <div class="about-text fade-in delay-2">
+          <h1>About <span class="purple-text">Me</span></h1>
+          <div class="divider-bar"></div>
+
+          <p>I'm a passionate Computer Science student at Rajalakshmi Institute of Technology with a strong academic foundation and a CGPA of 8.00. I actively engage in learning modern technologies and strengthening my knowledge through coursework, practical assignments, and real-world academic projects. I am also strong in Full-Stack Development, continually improving my skills through hands-on coding and project-based learning.</p>
+
+          <p>Currently, I'm gaining experience as an AI Software Engineer Intern at Brakes India Limited, where I work on developing intelligent conversational systems using RAG-based modules and Azure Cloud. I also have 3 months of internship experience at Clouds Dial IT Services Private Limited, where I worked on real-time projects and CRM systems focused on PHP development.</p>
+
+          <p>I specialize in creating innovative solutions using React.js, PHP, HTML, CSS, Python, Java, Node.js, and MongoDB. My passion lies in building applications that solve real-world problems and deliver efficient, user-focused experiences.</p>
+
+          <p>HR Web Solutions was founded and is led by me, supported by a skilled team of two dedicated freelance professionals. Together, we deliver high-quality, modern, and result-driven web solutions for clients across various industries. Every project is handled with personal care, strong collaboration, and a commitment to excellence.</p>
+
+          <div class="about-mini-stats">
+            <div class="mini-stat">
+              <div class="val purple-text">10+</div>
+              <div class="lbl">Projects Completed</div>
+            </div>
+            <div class="mini-stat">
+              <div class="val pink-text">4+</div>
+              <div class="lbl">Certifications</div>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== EDUCATION ===== -->
+  <section class="section about-alt-section">
+    <div class="container">
+      <div class="section-header">
+        <h2 class="section-title">🎓 Education</h2>
+      </div>
+      <div class="cards-list" id="educationList"></div>
+    </div>
+  </section>
+
+  <!-- ===== EXPERIENCE ===== -->
+  <section class="section">
+    <div class="container">
+      <div class="section-header">
+        <h2 class="section-title">💼 Work Experience</h2>
+      </div>
+      <div class="cards-list" id="experienceList"></div>
+    </div>
+  </section>
+
+  <!-- ===== SKILLS ===== -->
+  <section class="section about-alt-section">
+    <div class="container">
+      <div class="section-header">
+        <h2 class="section-title">Technical <span class="purple-text">Skills</span></h2>
+      </div>
+      <div class="skills-grid" id="skillsGrid"></div>
+    </div>
+  </section>
+
+  <!-- ===== CERTIFICATIONS ===== -->
+  <section class="section">
+    <div class="container">
+      <div class="section-header">
+        <h2 class="section-title">🏅 Certifications</h2>
+      </div>
+      <div class="certs-grid" id="certsGrid"></div>
+    </div>
+  </section>
+
+  <!-- ===== ACHIEVEMENTS ===== -->
+  <section class="section about-alt-section">
+    <div class="container">
+      <div class="section-header">
+        <h2 class="section-title">Achievements &amp; <span class="purple-text">Highlights</span></h2>
+      </div>
+      <div class="achievements-grid" id="achievementsGrid"></div>
+    </div>
+  </section>
+
+  <!-- ===== FOOTER ===== -->
+  <footer class="footer">
+    <div class="container">
+      <div class="footer-grid">
+        <div class="footer-brand">
+          <div class="footer-logo gradient-text">HARISHSR</div>
+          <p>Full Stack Developer &amp; AI Engineer passionate about building innovative solutions.</p>
+          <div class="footer-socials">
+            <a href="https://www.linkedin.com/in/harish1011" target="_blank" class="footer-social-btn">in</a>
+            <a href="https://github.com/srharish34-wq" target="_blank" class="footer-social-btn">gh</a>
+          </div>
+        </div>
+        <div class="footer-col">
+          <h4>Quick Links</h4>
+          <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="about.html">About</a></li>
+            <li><a href="services.html">Services</a></li>
+            <li><a href="projects.html">Projects</a></li>
+            <li><a href="contact.html">Contact</a></li>
+          </ul>
+        </div>
+        <div class="footer-col">
+          <h4>Services</h4>
+          <ul>
+            <li>AI Chatbot Development</li>
+            <li>Full Stack Development</li>
+            <li>Machine Learning</li>
+            <li>PHP Development</li>
+            <li>E-commerce Solutions</li>
+          </ul>
+        </div>
+        <div class="footer-col">
+          <h4>Get In Touch</h4>
+          <ul>
+            <li><a href="mailto:srharish34@gmail.com">srharish34@gmail.com</a></li>
+            <li><a href="tel:+916369254389">+91 6369254389</a></li>
+            <li>Chennai, Tamil Nadu, India</li>
+          </ul>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <p>&copy; <span id="year"></span> Harish SR. All rights reserved.</p>
+        <p>Made with ❤️ by Harish SR</p>
+      </div>
+    </div>
+  </footer>
+
+  <script src="js/script.js"></script>
+</body>
+</html>

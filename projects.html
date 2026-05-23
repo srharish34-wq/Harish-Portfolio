@@ -1,0 +1,748 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Harish SR | Full Stack Developer & AI Engineer</title>
+  <link rel="stylesheet" href="style/style.css" />
+  <link href="https://fonts.googleapis.com/css2?family=Syne:wght@400;600;700;800&family=DM+Sans:ital,wght@0,300;0,400;0,500;1,400&display=swap" rel="stylesheet"/>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/lucide/0.263.1/lucide.min.css"/>
+</head>
+<body class="dark-theme">
+
+  <!-- ===== NAVBAR ===== -->
+  <nav class="navbar" id="navbar">
+    <div class="nav-container">
+      <a href="index.html" class="nav-logo">HARISH SR</a>
+
+      <!-- Desktop links -->
+      <div class="nav-links">
+        <a href="index.html" class="nav-link ">Home</a>
+        <a href="about.html" class="nav-link">About</a>
+        <a href="services.html" class="nav-link">Services</a>
+        <a href="projects.html" class="nav-link active">Projects</a>
+        <a href="contact.html" class="nav-link">Contact</a>
+        <button class="theme-toggle" id="themeToggle" title="Toggle theme">
+          <span class="theme-icon">☀️</span>
+        </button>
+        <a href="mailto:srharish34@gmail.com" class="btn-primary nav-cta">
+          <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect width="20" height="16" x="2" y="4" rx="2"/><path d="m22 7-8.97 5.7a1.94 1.94 0 0 1-2.06 0L2 7"/></svg>
+          Let's Talk
+        </a>
+      </div>
+
+      <!-- Hamburger -->
+      <button class="hamburger" id="hamburger" aria-label="Toggle menu" aria-expanded="false">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+  </nav>
+
+  <!-- Mobile Menu Drawer -->
+  <div class="mobile-menu" id="mobileMenu">
+    <div class="mobile-menu-inner">
+      <a href="index.html" class="mobile-nav-link active"> Home</a>
+      <a href="about.html" class="mobile-nav-link"> About</a>
+      <a href="services.html" class="mobile-nav-link"> Services</a>
+      <a href="projects.html" class="mobile-nav-link"> Projects</a>
+      <a href="contact.html" class="mobile-nav-link">Contact</a>
+      <div class="mobile-menu-divider"></div>
+      <div class="mobile-menu-bottom">
+        <button class="mobile-theme-btn" id="mobileThemeToggle">
+          <span class="theme-icon">☀️</span>
+          <span class="theme-label">Dark Mode</span>
+        </button>
+        <a href="mailto:srharish34@gmail.com" class="mobile-cta">
+          <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect width="20" height="16" x="2" y="4" rx="2"/><path d="m22 7-8.97 5.7a1.94 1.94 0 0 1-2.06 0L2 7"/></svg>
+          Let's Talk
+        </a>
+      </div>
+    </div>
+  </div>
+
+  <!-- ===== PAGE HERO ===== -->
+  <section class="page-hero">
+    <div class="hero-bg-orb orb-1"></div>
+    <div class="hero-bg-orb orb-2"></div>
+    <div class="container">
+      <h1 class="fade-in">My <span class="gradient-text">Projects</span></h1>
+      <p class="fade-in delay-1">Explore my latest work in AI/ML, Full Stack Development, and Web Applications</p>
+      <div class="divider-bar fade-in delay-2"></div>
+    </div>
+  </section>
+
+  <!-- ===== FILTER BAR ===== -->
+  <section class="section proj-filter-section">
+    <div class="container">
+      <div class="filter-bar">
+        <button class="filter-btn active" data-filter="all">All</button>
+        <button class="filter-btn" data-filter="AI/ML">AI / ML</button>
+        <button class="filter-btn" data-filter="Full Stack">Full Stack</button>
+        <button class="filter-btn" data-filter="Web Development">Web Development</button>
+        <button class="filter-btn" data-filter="E-commerce">E-commerce</button>
+      </div>
+
+      <!-- ===== PROJECTS GRID ===== -->
+      <div class="projects-grid" id="projectsGrid">
+
+
+        <!-- ===== PETROGO PROJECT ===== -->
+<div class="project-card" data-category="Full Stack">
+  <div class="project-top">
+    <div class="project-emoji">⛽</div>
+    <span class="project-category">Full Stack</span>
+  </div>
+
+  <h3 class="project-title">Petrogo</h3>
+
+  <p class="project-desc">
+    Multi-panel fuel delivery platform developed as both website and mobile application with real-time delivery management and tracking system.
+  </p>
+
+  <div class="project-techs">
+    <span class="project-tech">React</span>
+    <span class="project-tech">React Native</span>
+    <span class="project-tech">Node.js</span>
+    <span class="project-tech">MongoDB</span>
+    <span class="project-tech">Express.js</span>
+  </div>
+
+  <div class="project-highlights">
+    <div class="project-highlight"><span class="proj-check">✓</span><span>4-panel platform architecture</span></div>
+    <div class="project-highlight"><span class="proj-check">✓</span><span>Cross-platform mobile app</span></div>
+    <div class="project-highlight"><span class="proj-check">✓</span><span>Real-time order & delivery tracking</span></div>
+    <div class="project-highlight"><span class="proj-check">✓</span><span>Copyright certified project</span></div>
+  </div>
+
+  <div class="project-footer">
+    <a href="https://github.com/srharish34-wq" target="_blank" class="btn-demo">
+      <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+        <path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"/>
+        <polyline points="15 3 21 3 21 9"/>
+        <line x1="10" x2="21" y1="14" y2="3"/>
+      </svg>
+      View GitHub Repo
+    </a>
+
+    <a href="https://github.com/srharish34-wq" target="_blank" class="btn-github" title="GitHub">
+      <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="currentColor">
+        <path d="M12 0C5.37 0 0 5.37 0 12c0 5.31 3.435 9.795 8.205 11.385.6.105.825-.255.825-.57 0-.285-.015-1.23-.015-2.235-3.015.555-3.795-.735-4.035-1.41-.135-.345-.72-1.41-1.23-1.695-.42-.225-1.02-.78-.015-.795.945-.015 1.62.87 1.845 1.23 1.08 1.815 2.805 1.305 3.495.99.105-.78.42-1.305.765-1.605-2.67-.3-5.46-1.335-5.46-5.925 0-1.305.465-2.385 1.23-3.225-.12-.3-.54-1.53.12-3.18 0 0 1.005-.315 3.3 1.23.96-.27 1.98-.405 3-.405s2.04.135 3 .405c2.295-1.56 3.3-1.23 3.3-1.23.66 1.65.24 2.88.12 3.18.765.84 1.23 1.905 1.23 3.225 0 4.605-2.805 5.625-5.475 5.925.435.375.81 1.095.81 2.22 0 1.605-.015 2.895-.015 3.3 0 .315.225.69.825.57A12.02 12.02 0 0 0 24 12c0-6.63-5.37-12-12-12z"/>
+      </svg>
+    </a>
+  </div>
+</div>
+
+
+<!-- ===== CHRONOSPHERE AI PROJECT ===== -->
+<div class="project-card" data-category="AI/ML">
+  <div class="project-top">
+    <div class="project-emoji">🧠</div>
+    <span class="project-category">AI / ML</span>
+  </div>
+
+  <h3 class="project-title">ChronoSphere AI</h3>
+
+  <p class="project-desc">
+    Advanced temporal intelligence and causal analysis platform using Graph RAG, multi-agent AI systems, and future risk prediction models.
+  </p>
+
+  <div class="project-techs">
+    <span class="project-tech">Python</span>
+    <span class="project-tech">LangChain</span>
+    <span class="project-tech">CrewAI</span>
+    <span class="project-tech">Neo4j</span>
+    <span class="project-tech">Pinecone</span>
+    <span class="project-tech">FastAPI</span>
+  </div>
+
+  <div class="project-highlights">
+    <div class="project-highlight"><span class="proj-check">✓</span><span>Graph RAG retrieval system</span></div>
+    <div class="project-highlight"><span class="proj-check">✓</span><span>Timeline reconstruction & causal reasoning</span></div>
+    <div class="project-highlight"><span class="proj-check">✓</span><span>Future risk prediction models</span></div>
+    <div class="project-highlight"><span class="proj-check">✓</span><span>Multi-agent AI workflow automation</span></div>
+  </div>
+
+  <div class="project-footer">
+    <a href="https://github.com/srharish34-wq" target="_blank" class="btn-demo">
+      <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+        <path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"/>
+        <polyline points="15 3 21 3 21 9"/>
+        <line x1="10" x2="21" y1="14" y2="3"/>
+      </svg>
+      View GitHub Repo
+    </a>
+
+    <a href="https://github.com/srharish34-wq" target="_blank" class="btn-github" title="GitHub">
+      <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="currentColor">
+        <path d="M12 0C5.37 0 0 5.37 0 12c0 5.31 3.435 9.795 8.205 11.385.6.105.825-.255.825-.57 0-.285-.015-1.23-.015-2.235-3.015.555-3.795-.735-4.035-1.41-.135-.345-.72-1.41-1.23-1.695-.42-.225-1.02-.78-.015-.795.945-.015 1.62.87 1.845 1.23 1.08 1.815 2.805 1.305 3.495.99.105-.78.42-1.305.765-1.605-2.67-.3-5.46-1.335-5.46-5.925 0-1.305.465-2.385 1.23-3.225-.12-.3-.54-1.53.12-3.18 0 0 1.005-.315 3.3 1.23.96-.27 1.98-.405 3-.405s2.04.135 3 .405c2.295-1.56 3.3-1.23 3.3-1.23.66 1.65.24 2.88.12 3.18.765.84 1.23 1.905 1.23 3.225 0 4.605-2.805 5.625-5.475 5.925.435.375.81 1.095.81 2.22 0 1.605-.015 2.895-.015 3.3 0 .315.225.69.825.57A12.02 12.02 0 0 0 24 12c0-6.63-5.37-12-12-12z"/>
+      </svg>
+    </a>
+  </div>
+</div>
+
+
+<!-- ===== SILENT SOS PROJECT ===== -->
+<div class="project-card" data-category="Mobile App">
+  <div class="project-top">
+    <div class="project-emoji">🚨</div>
+    <span class="project-category">Mobile App</span>
+  </div>
+
+  <h3 class="project-title">Silent SOS</h3>
+
+  <p class="project-desc">
+    Real-time emergency alert and safety platform with mobile application, police dashboard, live tracking, and automated emergency communication system.
+  </p>
+
+  <div class="project-techs">
+    <span class="project-tech">React Native</span>
+    <span class="project-tech">Node.js</span>
+    <span class="project-tech">MongoDB Atlas</span>
+    <span class="project-tech">Socket.IO</span>
+    <span class="project-tech">Twilio</span>
+    <span class="project-tech">Fast2SMS</span>
+  </div>
+
+  <div class="project-highlights">
+    <div class="project-highlight"><span class="proj-check">✓</span><span>Real-time SOS emergency triggering</span></div>
+    <div class="project-highlight"><span class="proj-check">✓</span><span>AI voice calls & SMS alerts</span></div>
+    <div class="project-highlight"><span class="proj-check">✓</span><span>Live GPS tracking using OpenStreetMap</span></div>
+    <div class="project-highlight"><span class="proj-check">✓</span><span>Police & admin monitoring dashboards</span></div>
+  </div>
+
+  <div class="project-footer">
+    <a href="https://github.com/srharish34-wq" target="_blank" class="btn-demo">
+      <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+        <path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"/>
+        <polyline points="15 3 21 3 21 9"/>
+        <line x1="10" x2="21" y1="14" y2="3"/>
+      </svg>
+      View GitHub Repo
+    </a>
+
+    <a href="https://github.com/srharish34-wq" target="_blank" class="btn-github" title="GitHub">
+      <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="currentColor">
+        <path d="M12 0C5.37 0 0 5.37 0 12c0 5.31 3.435 9.795 8.205 11.385.6.105.825-.255.825-.57 0-.285-.015-1.23-.015-2.235-3.015.555-3.795-.735-4.035-1.41-.135-.345-.72-1.41-1.23-1.695-.42-.225-1.02-.78-.015-.795.945-.015 1.62.87 1.845 1.23 1.08 1.815 2.805 1.305 3.495.99.105-.78.42-1.305.765-1.605-2.67-.3-5.46-1.335-5.46-5.925 0-1.305.465-2.385 1.23-3.225-.12-.3-.54-1.53.12-3.18 0 0 1.005-.315 3.3 1.23.96-.27 1.98-.405 3-.405s2.04.135 3 .405c2.295-1.56 3.3-1.23 3.3-1.23.66 1.65.24 2.88.12 3.18.765.84 1.23 1.905 1.23 3.225 0 4.605-2.805 5.625-5.475 5.925.435.375.81 1.095.81 2.22 0 1.605-.015 2.895-.015 3.3 0 .315.225.69.825.57A12.02 12.02 0 0 0 24 12c0-6.63-5.37-12-12-12z"/>
+      </svg>
+    </a>
+  </div>
+</div>
+
+        <!-- IntelliQuery Hub -->
+        <div class="project-card" data-category="AI/ML">
+          <div class="project-top">
+            <div class="project-emoji">🤖</div>
+            <span class="project-category">AI / ML</span>
+          </div>
+          <h3 class="project-title">IntelliQuery Hub</h3>
+          <p class="project-desc">Developed an intelligent query processing system leveraging Large Language Models for automated response generation with 99% uptime and reliable performance.</p>
+          <div class="project-techs">
+            <span class="project-tech">Python</span>
+            <span class="project-tech">LLM APIs</span>
+            <span class="project-tech">FastAPI</span>
+            <span class="project-tech">NLP</span>
+          </div>
+          <div class="project-highlights">
+            <div class="project-highlight"><span class="proj-check">✓</span><span>Advanced prompt engineering techniques</span></div>
+            <div class="project-highlight"><span class="proj-check">✓</span><span>Multiple LLM providers integration</span></div>
+            <div class="project-highlight"><span class="proj-check">✓</span><span>RESTful API implementation</span></div>
+            <div class="project-highlight"><span class="proj-check">✓</span><span>99% uptime achieved</span></div>
+          </div>
+        <div class="project-footer">
+    <a href="https://github.com/srharish34-wq" target="_blank" class="btn-demo">
+      <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+        <path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"/>
+        <polyline points="15 3 21 3 21 9"/>
+        <line x1="10" x2="21" y1="14" y2="3"/>
+      </svg>
+      View GitHub Repo
+    </a>
+
+    <a href="https://github.com/srharish34-wq" target="_blank" class="btn-github" title="GitHub">
+      <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="currentColor">
+        <path d="M12 0C5.37 0 0 5.37 0 12c0 5.31 3.435 9.795 8.205 11.385.6.105.825-.255.825-.57 0-.285-.015-1.23-.015-2.235-3.015.555-3.795-.735-4.035-1.41-.135-.345-.72-1.41-1.23-1.695-.42-.225-1.02-.78-.015-.795.945-.015 1.62.87 1.845 1.23 1.08 1.815 2.805 1.305 3.495.99.105-.78.42-1.305.765-1.605-2.67-.3-5.46-1.335-5.46-5.925 0-1.305.465-2.385 1.23-3.225-.12-.3-.54-1.53.12-3.18 0 0 1.005-.315 3.3 1.23.96-.27 1.98-.405 3-.405s2.04.135 3 .405c2.295-1.56 3.3-1.23 3.3-1.23.66 1.65.24 2.88.12 3.18.765.84 1.23 1.905 1.23 3.225 0 4.605-2.805 5.625-5.475 5.925.435.375.81 1.095.81 2.22 0 1.605-.015 2.895-.015 3.3 0 .315.225.69.825.57A12.02 12.02 0 0 0 24 12c0-6.63-5.37-12-12-12z"/>
+      </svg>
+    </a>
+  </div>
+</div>
+
+        <!-- HackSphere -->
+        <div class="project-card" data-category="Full Stack">
+          <div class="project-top">
+            <div class="project-emoji">🏆</div>
+            <span class="project-category">Full Stack</span>
+          </div>
+          <h3 class="project-title">HackSphere</h3>
+          <p class="project-desc">Comprehensive hackathon management platform supporting 500+ concurrent users with real-time judging systems, team formation, and project submission features.</p>
+          <div class="project-techs">
+            <span class="project-tech">MongoDB</span>
+            <span class="project-tech">Express.js</span>
+            <span class="project-tech">React</span>
+            <span class="project-tech">Node.js</span>
+            <span class="project-tech">TailwindCSS</span>
+          </div>
+          <div class="project-highlights">
+            <div class="project-highlight"><span class="proj-check">✓</span><span>User authentication &amp; authorization</span></div>
+            <div class="project-highlight"><span class="proj-check">✓</span><span>Payment gateway integration</span></div>
+            <div class="project-highlight"><span class="proj-check">✓</span><span>Responsive UI/UX design</span></div>
+            <div class="project-highlight"><span class="proj-check">✓</span><span>Supports 500+ concurrent users</span></div>
+          </div>
+       <div class="project-footer">
+    <a href="https://github.com/srharish34-wq" target="_blank" class="btn-demo">
+      <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+        <path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"/>
+        <polyline points="15 3 21 3 21 9"/>
+        <line x1="10" x2="21" y1="14" y2="3"/>
+      </svg>
+      View GitHub Repo
+    </a>
+
+    <a href="https://github.com/srharish34-wq" target="_blank" class="btn-github" title="GitHub">
+      <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="currentColor">
+        <path d="M12 0C5.37 0 0 5.37 0 12c0 5.31 3.435 9.795 8.205 11.385.6.105.825-.255.825-.57 0-.285-.015-1.23-.015-2.235-3.015.555-3.795-.735-4.035-1.41-.135-.345-.72-1.41-1.23-1.695-.42-.225-1.02-.78-.015-.795.945-.015 1.62.87 1.845 1.23 1.08 1.815 2.805 1.305 3.495.99.105-.78.42-1.305.765-1.605-2.67-.3-5.46-1.335-5.46-5.925 0-1.305.465-2.385 1.23-3.225-.12-.3-.54-1.53.12-3.18 0 0 1.005-.315 3.3 1.23.96-.27 1.98-.405 3-.405s2.04.135 3 .405c2.295-1.56 3.3-1.23 3.3-1.23.66 1.65.24 2.88.12 3.18.765.84 1.23 1.905 1.23 3.225 0 4.605-2.805 5.625-5.475 5.925.435.375.81 1.095.81 2.22 0 1.605-.015 2.895-.015 3.3 0 .315.225.69.825.57A12.02 12.02 0 0 0 24 12c0-6.63-5.37-12-12-12z"/>
+      </svg>
+    </a>
+  </div>
+</div>
+        <!-- Brakes India Chatbot -->
+        <div class="project-card" data-category="AI/ML">
+          <div class="project-top">
+            <div class="project-emoji">💬</div>
+            <span class="project-category">AI / ML</span>
+          </div>
+          <h3 class="project-title">Brakes India Chatbot</h3>
+          <p class="project-desc">Intelligent chatbot for Brakes India Limited using RASA framework and Azure for automating customer support and internal query handling.</p>
+          <div class="project-techs">
+            <span class="project-tech">RASA</span>
+            <span class="project-tech">Azure Cloud</span>
+            <span class="project-tech">NLP</span>
+            <span class="project-tech">Python</span>
+          </div>
+          <div class="project-highlights">
+            <div class="project-highlight"><span class="proj-check">✓</span><span>Natural language processing</span></div>
+            <div class="project-highlight"><span class="proj-check">✓</span><span>Azure cloud deployment</span></div>
+            <div class="project-highlight"><span class="proj-check">✓</span><span>Multi-intent recognition</span></div>
+            <div class="project-highlight"><span class="proj-check">✓</span><span>Customer support automation</span></div>
+          </div>
+          <div class="project-footer">
+    <a href="https://github.com/srharish34-wq" target="_blank" class="btn-demo">
+      <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+        <path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"/>
+        <polyline points="15 3 21 3 21 9"/>
+        <line x1="10" x2="21" y1="14" y2="3"/>
+      </svg>
+      View GitHub Repo
+    </a>
+
+    <a href="https://github.com/srharish34-wq" target="_blank" class="btn-github" title="GitHub">
+      <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="currentColor">
+        <path d="M12 0C5.37 0 0 5.37 0 12c0 5.31 3.435 9.795 8.205 11.385.6.105.825-.255.825-.57 0-.285-.015-1.23-.015-2.235-3.015.555-3.795-.735-4.035-1.41-.135-.345-.72-1.41-1.23-1.695-.42-.225-1.02-.78-.015-.795.945-.015 1.62.87 1.845 1.23 1.08 1.815 2.805 1.305 3.495.99.105-.78.42-1.305.765-1.605-2.67-.3-5.46-1.335-5.46-5.925 0-1.305.465-2.385 1.23-3.225-.12-.3-.54-1.53.12-3.18 0 0 1.005-.315 3.3 1.23.96-.27 1.98-.405 3-.405s2.04.135 3 .405c2.295-1.56 3.3-1.23 3.3-1.23.66 1.65.24 2.88.12 3.18.765.84 1.23 1.905 1.23 3.225 0 4.605-2.805 5.625-5.475 5.925.435.375.81 1.095.81 2.22 0 1.605-.015 2.895-.015 3.3 0 .315.225.69.825.57A12.02 12.02 0 0 0 24 12c0-6.63-5.37-12-12-12z"/>
+      </svg>
+    </a>
+  </div>
+</div>
+
+        <!-- Employee Portal -->
+        <div class="project-card" data-category="Web Development">
+          <div class="project-top">
+            <div class="project-emoji">👥</div>
+            <span class="project-category">Web Development</span>
+          </div>
+          <h3 class="project-title">Employee Portal</h3>
+          <p class="project-desc">Complete employee management system with attendance tracking, leave management, and performance evaluation features.</p>
+          <div class="project-techs">
+            <span class="project-tech">PHP</span>
+            <span class="project-tech">phpMyAdmin</span>
+            <span class="project-tech">MySQL</span>
+            <span class="project-tech">Bootstrap</span>
+          </div>
+          <div class="project-highlights">
+            <div class="project-highlight"><span class="proj-check">✓</span><span>Employee database management</span></div>
+            <div class="project-highlight"><span class="proj-check">✓</span><span>Attendance &amp; leave tracking</span></div>
+            <div class="project-highlight"><span class="proj-check">✓</span><span>Performance reports</span></div>
+            <div class="project-highlight"><span class="proj-check">✓</span><span>Admin dashboard</span></div>
+          </div>
+         <div class="project-footer">
+    <a href="https://github.com/srharish34-wq" target="_blank" class="btn-demo">
+      <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+        <path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"/>
+        <polyline points="15 3 21 3 21 9"/>
+        <line x1="10" x2="21" y1="14" y2="3"/>
+      </svg>
+      View GitHub Repo
+    </a>
+
+    <a href="https://github.com/srharish34-wq" target="_blank" class="btn-github" title="GitHub">
+      <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="currentColor">
+        <path d="M12 0C5.37 0 0 5.37 0 12c0 5.31 3.435 9.795 8.205 11.385.6.105.825-.255.825-.57 0-.285-.015-1.23-.015-2.235-3.015.555-3.795-.735-4.035-1.41-.135-.345-.72-1.41-1.23-1.695-.42-.225-1.02-.78-.015-.795.945-.015 1.62.87 1.845 1.23 1.08 1.815 2.805 1.305 3.495.99.105-.78.42-1.305.765-1.605-2.67-.3-5.46-1.335-5.46-5.925 0-1.305.465-2.385 1.23-3.225-.12-.3-.54-1.53.12-3.18 0 0 1.005-.315 3.3 1.23.96-.27 1.98-.405 3-.405s2.04.135 3 .405c2.295-1.56 3.3-1.23 3.3-1.23.66 1.65.24 2.88.12 3.18.765.84 1.23 1.905 1.23 3.225 0 4.605-2.805 5.625-5.475 5.925.435.375.81 1.095.81 2.22 0 1.605-.015 2.895-.015 3.3 0 .315.225.69.825.57A12.02 12.02 0 0 0 24 12c0-6.63-5.37-12-12-12z"/>
+      </svg>
+    </a>
+  </div>
+</div>
+
+        <!-- Thrift Store -->
+        <div class="project-card" data-category="E-commerce">
+          <div class="project-top">
+            <div class="project-emoji">🛍️</div>
+            <span class="project-category">E-commerce</span>
+          </div>
+          <h3 class="project-title">Thrift Store</h3>
+          <p class="project-desc">Full-featured e-commerce platform for buying and selling pre-owned items with secure payment integration and inventory management.</p>
+          <div class="project-techs">
+            <span class="project-tech">PHP</span>
+            <span class="project-tech">MySQL</span>
+            <span class="project-tech">JavaScript</span>
+            <span class="project-tech">Bootstrap</span>
+          </div>
+          <div class="project-highlights">
+            <div class="project-highlight"><span class="proj-check">✓</span><span>Product listing &amp; search</span></div>
+            <div class="project-highlight"><span class="proj-check">✓</span><span>Payment gateway integration</span></div>
+            <div class="project-highlight"><span class="proj-check">✓</span><span>User reviews &amp; ratings</span></div>
+            <div class="project-highlight"><span class="proj-check">✓</span><span>Inventory management</span></div>
+          </div>
+       <div class="project-footer">
+    <a href="https://github.com/srharish34-wq" target="_blank" class="btn-demo">
+      <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+        <path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"/>
+        <polyline points="15 3 21 3 21 9"/>
+        <line x1="10" x2="21" y1="14" y2="3"/>
+      </svg>
+      View GitHub Repo
+    </a>
+
+    <a href="https://github.com/srharish34-wq" target="_blank" class="btn-github" title="GitHub">
+      <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="currentColor">
+        <path d="M12 0C5.37 0 0 5.37 0 12c0 5.31 3.435 9.795 8.205 11.385.6.105.825-.255.825-.57 0-.285-.015-1.23-.015-2.235-3.015.555-3.795-.735-4.035-1.41-.135-.345-.72-1.41-1.23-1.695-.42-.225-1.02-.78-.015-.795.945-.015 1.62.87 1.845 1.23 1.08 1.815 2.805 1.305 3.495.99.105-.78.42-1.305.765-1.605-2.67-.3-5.46-1.335-5.46-5.925 0-1.305.465-2.385 1.23-3.225-.12-.3-.54-1.53.12-3.18 0 0 1.005-.315 3.3 1.23.96-.27 1.98-.405 3-.405s2.04.135 3 .405c2.295-1.56 3.3-1.23 3.3-1.23.66 1.65.24 2.88.12 3.18.765.84 1.23 1.905 1.23 3.225 0 4.605-2.805 5.625-5.475 5.925.435.375.81 1.095.81 2.22 0 1.605-.015 2.895-.015 3.3 0 .315.225.69.825.57A12.02 12.02 0 0 0 24 12c0-6.63-5.37-12-12-12z"/>
+      </svg>
+    </a>
+  </div>
+</div>
+
+        <!-- Personal Portfolio -->
+        <div class="project-card" data-category="Web Development">
+          <div class="project-top">
+            <div class="project-emoji">💼</div>
+            <span class="project-category">Web Development</span>
+          </div>
+          <h3 class="project-title">Personal Portfolio</h3>
+          <p class="project-desc">A modern and responsive personal portfolio website built using React.js and Node.js to showcase skills, projects, and experience.</p>
+          <div class="project-techs">
+            <span class="project-tech">React.js</span>
+            <span class="project-tech">Node.js</span>
+            <span class="project-tech">Express.js</span>
+            <span class="project-tech">JavaScript</span>
+            <span class="project-tech">CSS</span>
+          </div>
+          <div class="project-highlights">
+            <div class="project-highlight"><span class="proj-check">✓</span><span>Responsive UI with smooth animations</span></div>
+            <div class="project-highlight"><span class="proj-check">✓</span><span>Dynamic project and experience sections</span></div>
+            <div class="project-highlight"><span class="proj-check">✓</span><span>Backend API in Node.js for contact form</span></div>
+            <div class="project-highlight"><span class="proj-check">✓</span><span>SEO optimized and fast performance</span></div>
+          </div>
+         <div class="project-footer">
+    <a href="https://github.com/srharish34-wq" target="_blank" class="btn-demo">
+      <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+        <path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"/>
+        <polyline points="15 3 21 3 21 9"/>
+        <line x1="10" x2="21" y1="14" y2="3"/>
+      </svg>
+      View GitHub Repo
+    </a>
+
+    <a href="https://github.com/srharish34-wq" target="_blank" class="btn-github" title="GitHub">
+      <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="currentColor">
+        <path d="M12 0C5.37 0 0 5.37 0 12c0 5.31 3.435 9.795 8.205 11.385.6.105.825-.255.825-.57 0-.285-.015-1.23-.015-2.235-3.015.555-3.795-.735-4.035-1.41-.135-.345-.72-1.41-1.23-1.695-.42-.225-1.02-.78-.015-.795.945-.015 1.62.87 1.845 1.23 1.08 1.815 2.805 1.305 3.495.99.105-.78.42-1.305.765-1.605-2.67-.3-5.46-1.335-5.46-5.925 0-1.305.465-2.385 1.23-3.225-.12-.3-.54-1.53.12-3.18 0 0 1.005-.315 3.3 1.23.96-.27 1.98-.405 3-.405s2.04.135 3 .405c2.295-1.56 3.3-1.23 3.3-1.23.66 1.65.24 2.88.12 3.18.765.84 1.23 1.905 1.23 3.225 0 4.605-2.805 5.625-5.475 5.925.435.375.81 1.095.81 2.22 0 1.605-.015 2.895-.015 3.3 0 .315.225.69.825.57A12.02 12.02 0 0 0 24 12c0-6.63-5.37-12-12-12z"/>
+      </svg>
+    </a>
+  </div>
+</div>
+
+        <!-- EcoWaste AI -->
+        <div class="project-card" data-category="AI/ML">
+          <div class="project-top">
+            <div class="project-emoji">♻️</div>
+            <span class="project-category">AI / ML</span>
+          </div>
+          <h3 class="project-title">EcoWaste AI</h3>
+          <p class="project-desc">AI-powered waste management solution with 92% accuracy in waste classification and predictive analytics for optimizing collection routes.</p>
+          <div class="project-techs">
+            <span class="project-tech">Python</span>
+            <span class="project-tech">TensorFlow</span>
+            <span class="project-tech">Computer Vision</span>
+            <span class="project-tech">IoT</span>
+            <span class="project-tech">React.js</span>
+          </div>
+          <div class="project-highlights">
+            <div class="project-highlight"><span class="proj-check">✓</span><span>Image recognition models</span></div>
+            <div class="project-highlight"><span class="proj-check">✓</span><span>IoT sensor integration</span></div>
+            <div class="project-highlight"><span class="proj-check">✓</span><span>Predictive analytics dashboard</span></div>
+            <div class="project-highlight"><span class="proj-check">✓</span><span>92% classification accuracy</span></div>
+          </div>
+        <div class="project-footer">
+    <a href="https://github.com/srharish34-wq" target="_blank" class="btn-demo">
+      <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+        <path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"/>
+        <polyline points="15 3 21 3 21 9"/>
+        <line x1="10" x2="21" y1="14" y2="3"/>
+      </svg>
+      View GitHub Repo
+    </a>
+
+    <a href="https://github.com/srharish34-wq" target="_blank" class="btn-github" title="GitHub">
+      <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="currentColor">
+        <path d="M12 0C5.37 0 0 5.37 0 12c0 5.31 3.435 9.795 8.205 11.385.6.105.825-.255.825-.57 0-.285-.015-1.23-.015-2.235-3.015.555-3.795-.735-4.035-1.41-.135-.345-.72-1.41-1.23-1.695-.42-.225-1.02-.78-.015-.795.945-.015 1.62.87 1.845 1.23 1.08 1.815 2.805 1.305 3.495.99.105-.78.42-1.305.765-1.605-2.67-.3-5.46-1.335-5.46-5.925 0-1.305.465-2.385 1.23-3.225-.12-.3-.54-1.53.12-3.18 0 0 1.005-.315 3.3 1.23.96-.27 1.98-.405 3-.405s2.04.135 3 .405c2.295-1.56 3.3-1.23 3.3-1.23.66 1.65.24 2.88.12 3.18.765.84 1.23 1.905 1.23 3.225 0 4.605-2.805 5.625-5.475 5.925.435.375.81 1.095.81 2.22 0 1.605-.015 2.895-.015 3.3 0 .315.225.69.825.57A12.02 12.02 0 0 0 24 12c0-6.63-5.37-12-12-12z"/>
+      </svg>
+    </a>
+  </div>
+</div>
+        
+
+        <!-- SmartAttend -->
+        <div class="project-card" data-category="AI/ML">
+          <div class="project-top">
+            <div class="project-emoji">👤</div>
+            <span class="project-category">AI / ML</span>
+          </div>
+          <h3 class="project-title">SmartAttend</h3>
+          <p class="project-desc">Face recognition attendance system with 95% accuracy using computer vision techniques and real-time processing capabilities.</p>
+          <div class="project-techs">
+            <span class="project-tech">Python</span>
+            <span class="project-tech">OpenCV</span>
+            <span class="project-tech">Machine Learning</span>
+            <span class="project-tech">MySQL</span>
+            <span class="project-tech">Flask</span>
+          </div>
+          <div class="project-highlights">
+            <div class="project-highlight"><span class="proj-check">✓</span><span>Automated attendance tracking</span></div>
+            <div class="project-highlight"><span class="proj-check">✓</span><span>MySQL database integration</span></div>
+            <div class="project-highlight"><span class="proj-check">✓</span><span>Web-based admin dashboard</span></div>
+            <div class="project-highlight"><span class="proj-check">✓</span><span>95% accuracy rate</span></div>
+          </div>
+        <div class="project-footer">
+    <a href="https://github.com/srharish34-wq" target="_blank" class="btn-demo">
+      <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+        <path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"/>
+        <polyline points="15 3 21 3 21 9"/>
+        <line x1="10" x2="21" y1="14" y2="3"/>
+      </svg>
+      View GitHub Repo
+    </a>
+
+    <a href="https://github.com/srharish34-wq" target="_blank" class="btn-github" title="GitHub">
+      <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="currentColor">
+        <path d="M12 0C5.37 0 0 5.37 0 12c0 5.31 3.435 9.795 8.205 11.385.6.105.825-.255.825-.57 0-.285-.015-1.23-.015-2.235-3.015.555-3.795-.735-4.035-1.41-.135-.345-.72-1.41-1.23-1.695-.42-.225-1.02-.78-.015-.795.945-.015 1.62.87 1.845 1.23 1.08 1.815 2.805 1.305 3.495.99.105-.78.42-1.305.765-1.605-2.67-.3-5.46-1.335-5.46-5.925 0-1.305.465-2.385 1.23-3.225-.12-.3-.54-1.53.12-3.18 0 0 1.005-.315 3.3 1.23.96-.27 1.98-.405 3-.405s2.04.135 3 .405c2.295-1.56 3.3-1.23 3.3-1.23.66 1.65.24 2.88.12 3.18.765.84 1.23 1.905 1.23 3.225 0 4.605-2.805 5.625-5.475 5.925.435.375.81 1.095.81 2.22 0 1.605-.015 2.895-.015 3.3 0 .315.225.69.825.57A12.02 12.02 0 0 0 24 12c0-6.63-5.37-12-12-12z"/>
+      </svg>
+    </a>
+  </div>
+</div>
+
+      </div>
+    </div>
+  </section>
+
+ <!-- ===== ACHIEVEMENTS ===== -->
+<section class="section proj-alt-section">
+  <div class="container">
+    <div class="section-header">
+      <h2 class="section-title">Achievements &amp; <span class="purple-text">Highlights</span></h2>
+    </div>
+
+    <div class="proj-achievements-grid">
+
+      <!-- Hackathon Achievement -->
+      <div class="proj-achievement-card">
+        <div class="proj-ach-icon">🏆</div>
+        <h3>Hackathon Finalist</h3>
+        <p>
+          Finalist in Hackagon National Hackathon and secured Top 20 position in SynapHack for innovative AI and full-stack solutions.
+        </p>
+      </div>
+
+      <!-- Petrogo Achievement -->
+      <div class="proj-achievement-card">
+        <div class="proj-ach-icon">📜</div>
+        <h3>Petrogo Copyright & Research</h3>
+        <p>
+          Received copyright certification for the Petrogo platform and published a research paper based on its architecture and implementation.
+        </p>
+      </div>
+
+      <!-- National Hackathons -->
+      <div class="proj-achievement-card">
+        <div class="proj-ach-icon">🚀</div>
+        <h3>National-Level Hackathons</h3>
+        <p>
+          Participated in HackSphere, TVS, L'Oréal, and HackEnergy hackathons, qualifying for advanced rounds and earning participation certifications.
+        </p>
+      </div>
+
+      <!-- Certifications -->
+      <div class="proj-achievement-card">
+        <div class="proj-ach-icon">🎓</div>
+        <h3>Industry Certifications</h3>
+        <p>
+          Completed certifications in AWS Cloud Foundations, Google AI Essentials, Infosys GenAI, Azure Fundamentals, and Kaggle Machine Learning.
+        </p>
+      </div>
+
+      <!-- Academic Performance -->
+      <div class="proj-achievement-card">
+        <div class="proj-ach-icon">📈</div>
+        <h3>Academic Excellence</h3>
+        <p>
+          Maintained a CGPA of 8.00 in Computer Science with strong performance across academics and technical projects.
+        </p>
+      </div>
+
+      <!-- Projects Achievement -->
+      <div class="proj-achievement-card">
+        <div class="proj-ach-icon">💻</div>
+        <h3>8+ Production Projects</h3>
+        <p>
+          Successfully developed and deployed 8+ projects across AI/ML, web development, mobile applications, and IoT domains.
+        </p>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<!-- ===== TECH USED ===== -->
+<section class="section">
+  <div class="container">
+    <div class="section-header">
+      <h2 class="section-title">Technologies <span class="purple-text">Used</span></h2>
+    </div>
+
+    <div class="tech-tags" id="projTechTags">
+
+      <!-- Languages -->
+      <span class="tech-tag">Python</span>
+      <span class="tech-tag">C</span>
+      <span class="tech-tag">Java</span>
+      <span class="tech-tag">JavaScript</span>
+      <span class="tech-tag">HTML5</span>
+      <span class="tech-tag">CSS3</span>
+
+      <!-- Frameworks -->
+      <span class="tech-tag">React.js</span>
+      <span class="tech-tag">React Native</span>
+      <span class="tech-tag">Node.js</span>
+      <span class="tech-tag">Express.js</span>
+      <span class="tech-tag">FastAPI</span>
+      <span class="tech-tag">TailwindCSS</span>
+      <span class="tech-tag">Flask</span>
+      <span class="tech-tag">RAG Modulation</span>
+
+      <!-- Data Science & ML -->
+      <span class="tech-tag">NumPy</span>
+      <span class="tech-tag">Pandas</span>
+      <span class="tech-tag">Matplotlib</span>
+      <span class="tech-tag">TensorFlow</span>
+      <span class="tech-tag">Machine Learning</span>
+      <span class="tech-tag">LangChain</span>
+      <span class="tech-tag">CrewAI</span>
+
+      <!-- Databases -->
+      <span class="tech-tag">MySQL</span>
+      <span class="tech-tag">MongoDB</span>
+      <span class="tech-tag">Firebase</span>
+      <span class="tech-tag">Neo4j</span>
+      <span class="tech-tag">Pinecone</span>
+
+      <!-- Cloud & Tools -->
+      <span class="tech-tag">Git</span>
+      <span class="tech-tag">RESTful APIs</span>
+      <span class="tech-tag">LLM Integration</span>
+      <span class="tech-tag">Prompt Engineering</span>
+      <span class="tech-tag">LLM</span>
+
+    </div>
+  </div>
+</section>
+
+  <!-- ===== CTA ===== -->
+  <section class="section proj-alt-section">
+    <div class="container">
+      <div class="cta-box">
+        <h2>Have a Project in Mind?</h2>
+        <p>Let's collaborate and create something extraordinary together</p>
+        <div class="cta-btns">
+          <a href="mailto:srharish34@gmail.com" class="btn-primary">
+            Start a Project
+            <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"/><polyline points="15 3 21 3 21 9"/><line x1="10" x2="21" y1="14" y2="3"/></svg>
+          </a>
+          <a href="contact.html" class="btn-secondary">Get In Touch</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== FOOTER ===== -->
+  <footer class="footer">
+    <div class="container">
+      <div class="footer-grid">
+        <div class="footer-brand">
+          <div class="footer-logo gradient-text">HARISHSR</div>
+          <p>Full Stack Developer &amp; AI Engineer passionate about building innovative solutions.</p>
+          <div class="footer-socials">
+            <a href="https://www.linkedin.com/in/harish1011" target="_blank" class="footer-social-btn">in</a>
+            <a href="https://github.com/srharish34-wq" target="_blank" class="footer-social-btn">gh</a>
+          </div>
+        </div>
+        <div class="footer-col">
+          <h4>Quick Links</h4>
+          <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="about.html">About</a></li>
+            <li><a href="services.html">Services</a></li>
+            <li><a href="projects.html">Projects</a></li>
+            <li><a href="contact.html">Contact</a></li>
+          </ul>
+        </div>
+        <div class="footer-col">
+          <h4>Services</h4>
+          <ul>
+            <li>AI Chatbot Development</li>
+            <li>Full Stack Development</li>
+            <li>Machine Learning</li>
+            <li>PHP Development</li>
+            <li>E-commerce Solutions</li>
+          </ul>
+        </div>
+        <div class="footer-col">
+          <h4>Get In Touch</h4>
+          <ul>
+            <li><a href="mailto:srharish34@gmail.com">srharish34@gmail.com</a></li>
+            <li><a href="tel:+916369254389">+91 6369254389</a></li>
+            <li>Chennai, Tamil Nadu, India</li>
+          </ul>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <p>&copy; <span id="year"></span> Harish SR. All rights reserved.</p>
+        <p>Made with ❤️ by Harish SR</p>
+      </div>
+    </div>
+  </footer>
+
+  <script src="js/script.js"></script>
+  <script>
+    /* Populate tech tags for projects page */
+    var allTech = [
+      'Python','JavaScript','React.js','Node.js','MongoDB','TensorFlow',
+      'Azure','FastAPI','MySQL','PHP','OpenCV','Flask','Express.js',
+      'Bootstrap','JWT','RASA','Machine Learning','Computer Vision','IoT','TailwindCSS'
+    ];
+    var projTagsEl = document.getElementById('projTechTags');
+    if (projTagsEl) {
+      allTech.forEach(function(t) {
+        var el = document.createElement('div');
+        el.className = 'tech-tag';
+        el.textContent = t;
+        projTagsEl.appendChild(el);
+      });
+    }
+  </script>
+</body>
+</html>
